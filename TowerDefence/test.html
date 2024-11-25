@@ -1,0 +1,110 @@
+﻿
+<html>
+
+
+<head>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            position: fixed;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        consolas {
+            font-family: consolas;
+        }
+    </style>
+</head>
+
+
+<title>Tower Defence</title>
+
+
+<h1><b>Tower Defence</b></h1>
+
+<consolas>
+    <p><em>Copyright (c) 2023 SIEDEL</em></p>
+</consolas>
+
+
+
+<b>
+    Version : 1.0
+</b>
+
+
+<div><b>*****************************************************************************************************************</b></div>
+
+<consolas>
+    <form action="https://www.google.com">
+        <label for="fname">Player Name_:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">PassWord____:</label>
+        <input type="password" id="lname" name="lname"><br><br>
+    </form>
+</consolas>
+
+<consolas>
+    <form action="/action_page.php">
+        <label for="fname">Je suis un humain : </label>
+        <input type="checkbox" value="date" Date">
+    </form>
+</consolas>
+
+
+<label for="file">Loading :</label>
+
+
+
+
+<script type="text/javascript">
+
+
+    function test()
+    {
+        if (document.getElementById("health").value >= 100)
+            document.getElementById("health").value = 0;
+        else
+            document.getElementById("health").value += 1;
+    }
+
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+        /* DOM is ready, so we can query for its elements */
+        var num = document.getElementById("health").value;
+        console.log(num);
+
+        /*additional code for comment*/
+        document.querySelector('button').addEventListener("click", function (event) {
+
+            test();
+
+        });
+
+    })
+
+</script>
+
+<progress id="health" value="0" max="100"></progress>
+<button>Download</button>
+
+
+
+
+
+<consolas>
+    <form action="https://www.google.com">
+        <input type="submit" value="Play">
+    </form>
+</consolas>
+
+
+
+
+</html>
